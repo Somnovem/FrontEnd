@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TASK 2</title>
+    <style>
+
+    ul li{
+        font-size: 1.1em;
+        margin: 0px 5px;
+        padding: 5px;
+    }
+    ul li:nth-child(even) {
+    background-color: rgb(69, 159, 248);
+    }
+
+    ul li:nth-child(odd) {
+    background-color: rgb(37, 113, 200);
+    }
+    .task-done{
+        background-color: gray !important;
+        text-decoration: line-through;
+        list-style-image: url(Resources/checked_16.png);
+    }
+    .cross{
+        color: red;
+        text-decoration: none;
+        font-size: 1.1em;
+        margin-left: 30px;
+    }
+    </style>
+</head>
+<body>
+    <div style="background-color: rgb(208, 204, 204);">
+        <header>
+            <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                My To Do List
+            </h1>
+        </header>
+        <ul style="list-style-image: url('Resources/unchecked_16.png');">
+            <li>Hit the gym <span class="cross">&#9747;</span></li>
+            <li class="task-done">Pay bills <span class="cross">&#9747;</span></li>
+            <li>Meet John <span class="cross">&#9747;</span></li>
+            <li>Buy eggs <span class="cross">&#9747;</span></li>
+            <li class="task-done">Read a book <span class="cross">&#9747;</span></li>
+            <li>Organize office <span class="cross">&#9747;</span></li>
+            <li>Eat dinner <span class="cross">&#9747;</span></li>
+            <li>Buy apples <span class="cross">&#9747;</span></li>
+            <li>Meet George <span class="cross">&#9747;</span></li>
+            <li>Feed the cat <span class="cross">&#9747;</span></li>
+            <li class="task-done">Write a letter <span class="cross">&#9747;</span></li>
+            <li>Run 1 km <span class="cross">&#9747;</span></li>
+        </ul>
+    </div>
+</body>
+</html>
