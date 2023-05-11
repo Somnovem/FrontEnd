@@ -4,29 +4,77 @@
     <meta charset="UTF-8">
     <title>TASK 1</title>
     <style>
-        .fruit-item{
-            background-color: rgba(116, 4, 58, 0.859);
-            text-align: center;
-            color: white;
-            margin: 10px;
-            padding: 10px;
-            font-size: 1.2em;
+        *{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
         }
-        .fruit-item::marker{
-           font-size: 0.8em;
+        ul{
+            background-color: rgb(246, 88, 88);
+            margin: 40px;
+            padding: 10px;
+            list-style-type: none;
+        }
+        ul>li{
+            margin: 40px 5px;
+        }
+        ul>li>span{
+            background-color: rgb(182, 61, 61);
+            margin: 5px;
+            padding: 10px;
+            font-size: 1.2rem;
+            display: block;
+        }
+        ul>li>span>span{
+            background-color: rgb(101, 15, 15);
+            margin: 5px;
+            padding: 10px 15px;
         }
     </style>
 </head>
-<body>
-    <div id="main" style="background-color: rgba(230, 230, 230, 0.854);padding: 10px;">
-        <ol style="background-color: rgba(255, 0, 119, 0.701); margin: 10px;padding: 10px;">
-            <li class="fruit-item">Apple</li>
-            <li class="fruit-item">Orange</li>
-            <li class="fruit-item">Pineapple</li>
-            <li class="fruit-item">Pear</li>
-            <li class="fruit-item">Cherry</li>
-        </ol>
-    </div>
+<body style="background-color: lightgray;">
+    <ul>
+        <li>
+            <span>
+                1.
+                <span>
+                    Apple
+                </span>
+            </span>
+        </li>
+        <li>
+            <span>
+                2.
+                <span>
+                    Orange
+                </span>
+            </span>
+        </li>
+        <li>
+            <span>
+                3.
+                <span>
+                    Pineapple
+                </span>
+            </span>
+        </li>
+        <li>
+            <span>
+                4.
+                <span>
+                    Pear
+                </span>
+            </span>
+        </li>
+        <li>
+            <span>
+                5.
+                <span>
+                    Cherry
+                </span>
+            </span>
+        </li>
+    </ul>
 </body>
 </html>

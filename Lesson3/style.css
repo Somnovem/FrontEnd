@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#main{
+    width: 800px;
+    margin: 0 auto;
+    border-left: 3px solid lightgreen;
+    min-height: 100vh;
+}
+.page-header,.page-footer,.page-content{
+    padding: 3px;
+    margin: 5px;
+}
+.page-header,.page-footer{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    border: 2px solid green;
+}
+.page-content{
+    border: 2px solid blue;
+}
+.page-footer{
+    font-size: 0.75rem;
+}
+
+.page-content>p{
+    color:brown;
+    border: 1px solid red;
+    margin: 5px;
+    padding: 3px;
+}
+
+/* Для футера который идет после дива(любой елемент, класс, айди) */
+div+footer{ 
+    background-color: bisque;
+}
+
+p+footer{
+    color: blueviolet;
+}
+
+.page-header + .d1{
+    background-color:blueviolet;
+    font-size: 1.2em;
+    color:white;
+    text-align: center;
+}
+
+/* Все теги в указанном */
+#main>*{
+    margin: 10px;
+    
+}

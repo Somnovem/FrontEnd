@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#main{
+    width: 80%;
+    margin: 0 auto;
+    border-left: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+    min-height: 100vh;
+}
+
+.page-header,.page-footer{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    /* Вверх,вправо,влево,вниз(первый вверх-вниз,второй - влево-вправо, если 3, то вверх,стороны,вниз) */
+    padding: 10px 20px;
+    background-color: antiquewhite;
+    box-sizing: border-box;
+}
+
+.page-footer{
+    font-size: .85em;
+}
+
+.page-header{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/catchef.png);
+    background-repeat: repeat-x;
+}
+
+.gallery>img{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    border: 2px solid green;
+    border-radius: 15px 0;
+    opacity: 0.65;
+}
+
+.gallery > img:hover{
+    transform: scale(1.15);
+    border: 2px solid brown;
+    opacity: 1;
+}
+
+.page-menu{
+    background-color: rgb(231,165,117);
+    text-align: center;
+    margin: 5px inherit;
+}
+
+.page-menu > ul{
+    list-style-type: none;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.page-menu > ul> li{
+    display: inline-block;
+}
+
+.page-menu > ul> li > a{
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+    display: inline-block;
+    box-sizing: border-box;
+    height: 40px;
+    width: 100px;
+    padding-top: 10px;
+    text-align: center;
+    border-right:1px solid gray;
+    margin-left: -4px;
+}
+
+.page-menu > ul> li:last-child > a{
+    border-right:none;
+}
+
+.page-menu > ul> li > a:hover{
+    color:black;
+    background-color: rgb(245,204,174);
+    border-bottom: 3px solid lightgray;
+
+}

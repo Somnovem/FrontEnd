@@ -17,15 +17,14 @@
     ul li:nth-child(odd) {
     background-color: rgb(37, 113, 200);
     }
-    .task-done{
-        background-color: gray !important;
+    span.task-done{
         text-decoration: line-through;
+    }
+    li.task-done{
+        background-color: gray !important;
         list-style-image: url(Resources/checked_16.png);
     }
     .cross{
-        color: red;
-        text-decoration: none;
-        font-size: 1.1em;
         margin-left: 30px;
     }
     </style>
@@ -33,23 +32,56 @@
 <body>
     <div style="background-color: rgb(208, 204, 204);">
         <header>
-            <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+            <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin-left: 40px;">
                 My To Do List
             </h1>
         </header>
         <ul style="list-style-image: url('Resources/unchecked_16.png');">
-            <li>Hit the gym <span class="cross">&#9747;</span></li>
-            <li class="task-done">Pay bills <span class="cross">&#9747;</span></li>
-            <li>Meet John <span class="cross">&#9747;</span></li>
-            <li>Buy eggs <span class="cross">&#9747;</span></li>
-            <li class="task-done">Read a book <span class="cross">&#9747;</span></li>
-            <li>Organize office <span class="cross">&#9747;</span></li>
-            <li>Eat dinner <span class="cross">&#9747;</span></li>
-            <li>Buy apples <span class="cross">&#9747;</span></li>
-            <li>Meet George <span class="cross">&#9747;</span></li>
-            <li>Feed the cat <span class="cross">&#9747;</span></li>
-            <li class="task-done">Write a letter <span class="cross">&#9747;</span></li>
-            <li>Run 1 km <span class="cross">&#9747;</span></li>
+            <li>
+                <span>Hit the gym</span>
+                <span class="cross">❌</span>
+            </li>
+            <li class="task-done">
+                <span class="task-done">Pay bills</span>
+                <span class="cross">❌</span>
+            </li>
+            <li>
+                <span>Meet John</span>
+                <span class="cross">❌</span>
+            </li>
+            <li>
+                <span>Buy eggs</span>
+                <span class="cross">❌</span>
+            </li>
+            <li class="task-done">
+                <span class="task-done">Read a book</span> 
+                <span class="cross">❌</span>
+            </li>
+            <li>
+                <span>Organize office</span> 
+                <span class="cross">❌</span>
+            </li>
+            <li>
+                <span>Eat dinner</span> 
+                <span class="cross">❌</span>
+            </li>
+            <li>
+                <span>Buy apples</span> 
+                <span class="cross">❌</span>
+            </li>
+            <li>
+                <span>Meet George</span>
+                <span class="cross">❌</span>
+            </li>
+            <li>
+                <span>Feed the cat</span> 
+                <span class="cross">❌</span>
+            </li>
+            <li class="task-done">
+                <span class="task-done">Write a letter</span>
+                <span class="cross">❌</span>
+            </li>
+            <li>Run 1 km <span class="cross">❌</span></li>
         </ul>
     </div>
 </body>
