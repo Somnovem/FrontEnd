@@ -1,0 +1,52 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 200px; /* Or you can use a percentage value, like 20% */
+    background-color: #ccc;
+  }
+  
+  #menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #menu li {
+    padding: 10px;
+  }
+  
+  #menu li a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .menu-item-image{
+    width: 60px;
+  }
+
+  .menu-item-image>img{
+    width: 60px;
+    height: 60px;
+  }
+
+  .menu-item-text{
+    text-align: center;
+    vertical-align: 25px;
+    color: white;
+  }
+
+  ul>li>div{
+    background-color: gray;
+  }
+
+  ul>li>div:hover{
+    background-color: rgb(74, 74, 74);
+  }
