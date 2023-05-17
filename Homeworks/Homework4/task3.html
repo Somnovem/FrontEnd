@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TASK 3</title>
+    <link rel="stylesheet" href="style3.css">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .block {
+        display: flex;
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .content,
+      .content-image {
+        flex-basis: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .content-image {
+        overflow: hidden;
+      }
+
+      .text {
+        text-align: center;
+      }
+
+      .image {
+        flex-basis: 100%;
+        height: 100%;
+        transition: all .5s;
+      }
+
+      .block:hover::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+      }
+
+      .block:hover::after {
+        opacity: 1;
+      }
+
+      .block:hover .image {
+        transform: scale(1.1);
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="block">
+            <div class="content">
+              <div class="text">
+                    HELLO, WORLD!
+              </div>
+            </div>
+            <div class="content-image">
+              <img class="image" src="images/tulip.png" alt="Your Image">
+            </div>
+        </div>
+        <div class="block">
+          <div class="content">
+            <div class="text">
+                  HELLO, WORLD!
+            </div>
+          </div>
+          <div class="content-image">
+            <img class="image" src="images/tulip.png" alt="Your Image">
+          </div>
+      </div>
+      <div class="block">
+        <div class="content">
+          <div class="text">
+                HELLO, WORLD!
+          </div>
+        </div>
+        <div class="content-image">
+          <img class="image" src="images/tulip.png" alt="Your Image">
+        </div>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+
+  <!-- Clock done through JS -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>TASK 1</title>
+  <style>
+    body {
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .clock {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      border: 2px solid white;
+      border-radius: 50%;
+    }
+
+    .hand {
+      position: absolute;
+      background-color: white;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .hour-hand {
+      width: 8px;
+      height: 70px;
+      top: 50%;
+      left: 50%;
+      transform-origin: bottom center;
+      transform: translate(-50%, -100%) rotate(0deg);
+    }
+
+    .minute-hand {
+      width: 4px;
+      height: 90px;
+      top: 50%;
+      left: 50%;
+      transform-origin: bottom center;
+      transform: translate(-50%, -100%) rotate(0deg);
+    }
+
+    .second-hand {
+      width: 2px;
+      height: 100px;
+      top: 50%;
+      left: 50%;
+      transform-origin: bottom center;
+      transform: translate(-50%, -100%) rotate(0deg);
+      background-color: red;
+    }
+
+    .center-dot {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background-color: white;
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+  <div class="clock">
+    <div class="hand hour-hand"></div>
+    <div class="hand minute-hand"></div>
+    <div class="hand second-hand"></div>
+    <div class="center-dot"></div>
+  </div>
+
+  <script>
+    function rotateClockHands() {
+      const now = new Date();
+      const hours = now.getHours();
+      const minutes = now.getMinutes();
+      const seconds = now.getSeconds();
+
+      const hourHand = document.querySelector('.hour-hand');
+      const minuteHand = document.querySelector('.minute-hand');
+      const secondHand = document.querySelector('.second-hand');
+
+      const hourRotation = (hours % 12) * 30 + (minutes / 2);
+      const minuteRotation = minutes * 6 + (seconds / 10);
+      const secondRotation = seconds * 6;
+
+      hourHand.style.transform = `translate(-50%, -100%) rotate(${hourRotation}deg)`;
+      minuteHand.style.transform = `translate(-50%, -100%) rotate(${minuteRotation}deg)`;
+      secondHand.style.transform = `translate(-50%, -100%) rotate(${secondRotation}deg)`;
+    }
+
+    setInterval(rotateClockHands, 1000);
+  </script>
+</body>
+</html> -->
+
+
+
+  <!-- Clock done through CSS -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TASK 1</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <div class="clock" id="clock">
+    <div class="hour-hand hand" id="hour-hand"></div>
+    <div class="minute-hand hand" id="minute-hand"></div>
+    <div class="second-hand hand" id="second-hand"></div>
+    <div class="center-circle"></div>
+  </div>
+</body>
+</html>

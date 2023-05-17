@@ -41,12 +41,27 @@
     border: 2px solid green;
     border-radius: 15px 0;
     opacity: 0.65;
+    /* transition: opacity .8s cubic-bezier(0.075, 0.82, 0.165, 1) 0s; */
+    /* transition: opacity .8s cubic-bezier(0.075, 0.82, 0.165, 1) 0s, border.6s liner 0s; */
+    /* transition: all .8s cubic-bezier(0.075, 0.82, 0.165, 1) 0s; */
+    transition-property: opacity,border,background-color;
+    transition-duration: 0.8s,0.6s,0.5s;
+    transition-timing-function: linear,ease,linear;
+    transition-delay: 0s,0.1s,0s;
 }
 
 .gallery > img:hover{
     transform: scale(1.15);
     border: 2px solid brown;
     opacity: 1;
+    z-index: 1;
+    position: relative;
+    /* transform: rotate(360deg);
+    /* pivot */
+    /* transform-origin: 50% 50% 0; */
+    /* искажение */
+    /* transform: skew(10deg,0deg); */
+    transform: scale(1.2);
 }
 
 .page-menu{
@@ -77,6 +92,7 @@
     text-align: center;
     border-right:1px solid gray;
     margin-left: -4px;
+    transition: all 0.3s ease 0s;
 }
 
 .page-menu > ul> li:last-child > a{
@@ -87,5 +103,92 @@
     color:black;
     background-color: rgb(245,204,174);
     border-bottom: 3px solid lightgray;
+    transform: scaleX(1.2);
+    border-left: 1px solid gray;
+}
 
+#callback{
+    width: 300px;
+    background-color: grey;
+    height: 150px;
+    position: absolute;
+    z-index: 10;
+    top: 70vh;
+    left: -300px;
+    transition: left 0.3s ease-in 0s;
+}
+
+#callback>p{
+    padding: 20px;
+    color: white;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#callback:after{
+    content: "Обратная связь";
+    background-color: darksalmon;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    left: 300px;
+    width: 150px;
+    height: 30px;
+    display: inline-block;
+    padding-top: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+}
+#callback:hover{
+    left: 0;
+    transition: left 0.6 ease-out 0s;
+}
+
+#marque{
+background-color: lightgray;
+}
+#marque>p{
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    animation: marqueKey 3s linear 0s infinite alternate;
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 40px;
+    word-break: break-all;
+}
+
+/* @keyframes marqueKey {
+    from{
+        margin-left: 0vw;
+    }
+    to{
+        margin-left: 67%;
+    }
+} */
+
+@keyframes marqueKey {
+    0%{
+        margin-left: -14%;
+        opacity: 0;
+        color: bisque;
+    }
+    10%{
+        color: aqua;
+    }
+    50%{
+        color: aqua;
+        margin-left: 50%;
+        opacity: 1;
+    }
+    70%{
+        color: brown;
+    }
+    100%{
+        margin-left: 100%;
+        opacity: 0;
+        color: coral;
+    }
 }
