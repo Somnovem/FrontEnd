@@ -36,12 +36,12 @@ body {
 
 .container:hover #right-block {
     transition: transform 2s linear 0s;
-    transform: rotateY(-70deg);
+    transform: rotateY(-45deg);
 }
 
 .container:hover #left-block {
     transition: transform 2s linear 0s;
-    transform: rotateY(70deg);
+    transform: rotateY(45deg);
 }
 
 .text {

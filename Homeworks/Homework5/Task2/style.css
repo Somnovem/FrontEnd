@@ -68,5 +68,5 @@
     text-transform: uppercase;
   }
   .pageContent > h1{
-    padding-left: 30px;
+    text-indent: 2rem;
   }
