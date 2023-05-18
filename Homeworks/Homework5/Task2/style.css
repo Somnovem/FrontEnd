@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  #container {
+    display: flex;
+  }
+  
+  #sideMenu {
+    position: fixed;
+    top: 0;
+    width: 80px;
+    height: 100vh;
+    background-color: #555;
+    color: #fff;
+    z-index: 1;
+    overflow: hidden;
+    width: max-content;
+  }
+
+  #menuTitle {
+    padding: 20px;
+    text-transform: uppercase;
+  }
+  
+  .menuItem {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  
+  .menuItem:hover {
+    background-color: #333;
+  }
+  
+  .menuItem img {
+    width: 5vh;
+    margin-right: 10px;
+    transition: width 1s ease;
+  }
+  
+  .menuItem p {
+    width: 7vh;
+    margin: 0;
+    margin-left: -100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 0.3s ease, margin-left 1s ease;
+  }
+
+  #sideMenu:hover .menuItem p {
+    opacity: 1;
+    margin:0;
+    padding: 0 20px 0 0;
+  }
+
+  .pageContent {
+    margin-left: 100px;
+    padding: 20px;
+    z-index: 0;
+    text-transform: uppercase;
+  }
+  .pageContent > h1{
+    padding-left: 30px;
+  }
