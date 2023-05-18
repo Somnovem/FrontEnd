@@ -18,12 +18,12 @@ body {
     align-items: center;
     justify-content: center;
     height: 40vh;
-    width: 90vw;
+    width: 80vw;
     perspective: 1000px;
 }
 
 .block {
-    flex: 1;
+    flex: 0.8;
     position: relative;
     border: 5px solid rgb(109, 11, 60);
     background-color: rgb(155, 50, 117);
