@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --odd-row-odd-cell-bg-color: rgb(198, 198, 198);
+    --odd-row-even-cell-bg-color: rgb(231, 231, 231);
+    --even-row-odd-cell-bg-color: rgb(231, 231, 231);
+    --even-row-even-cell-bg-color: #f5f2f2;
+  }
+
+.wrapper{
+    margin: 10px 20px;
+    border-radius: 10px 10px;
+    overflow: hidden;
+}
+
+.container{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+#main-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#main-table thead{
+    height: 120px;
+}
+
+#main-table th{
+    color: white;
+}
+
+#main-table th:nth-child(1){
+    background-color: #7987aa;
+    font-size: 2rem;
+}
+
+#main-table th:nth-child(2){
+    background-color: #4f628d;
+}
+
+#main-table th:nth-child(3){
+    background-color: #2f4173;
+}
+
+#main-table th:nth-child(4){
+    background-color: #162954;
+}
+
+#main-table th:nth-child(5){
+    background-color: #071538;
+}
+
+#main-table > thead > tr > th > .plan-price{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#main-table > thead > tr > th > .plan-price::before{
+    content: '$';
+}
+
+#main-table > thead > tr > th > .plan-duration:before{
+    content: 'per month';
+}
+
+#main-table >tfoot > tr > td > .plan-button-buy{
+    width: 100px;
+    height: 40px;
+    text-transform: uppercase;
+}
+
+#main-table tr{
+    height: 60px;
+}
+
+#main-table td{
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+#main-table tr>td:first-child{
+    text-align: left;
+    text-indent: 25px;
+}
+
+#main-table tr > td:first-child{
+    width: 300px;
+}
+
+#main-table tr:nth-child(odd) td:nth-child(odd)
+{
+    background-color: var(--odd-row-odd-cell-bg-color);
+}
+
+#main-table tr:nth-child(odd) td:nth-child(even)
+{
+    background-color: var(--odd-row-even-cell-bg-color);
+}
+
+#main-table tr:nth-child(even) td:nth-child(odd)
+{
+    background-color: var(--even-row-odd-cell-bg-color);
+}
+
+#main-table tr:nth-child(even) td:nth-child(even)
+{
+    background-color: var(--even-row-even-cell-bg-color);
+}
+
+#main-table > tbody > tr > .plan-space:after{
+    content: "GB";
+}

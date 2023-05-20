@@ -1,0 +1,40 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #a23646;
+    display: flex;
+    align-items: center;
+  }
+  
+  .brand {
+    margin-left: 60px;
+    margin-right: 60px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  
+  .options {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .options li {
+    display: inline-block;
+  }
+  
+  .options li a {
+    display: block;
+    padding: 13px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  .options li a:hover {
+    background-color: #912f3c;
+  }
