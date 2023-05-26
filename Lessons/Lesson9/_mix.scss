@@ -1,0 +1,46 @@
+$bgcolor:rgb(0, 0, 0);
+$txtcolor:whitesmoke;
+$bghovercolor:navy;
+$txthovercolor:white;
+$brdcolor:navy;
+
+$index:5;
+@while $index > 0{
+    .element-#{$index} { width:10px * $index;}
+    $index:$index - 1;
+}
+@mixin browser-gradient($angle,$colorfrom,$colorto){
+    background: $colorfrom;
+    background: linear-gradient($angle,$colorfrom 0%, $colorto 80%);
+    background: -webkit-linear-gradient($angle,$colorfrom 0%, $colorto 80%);
+    background: -moz-linear-gradient($angle,$colorfrom 0%, $colorto 80%);
+}
+
+@function three-hundred-px(){
+    @return 300px;
+}
+
+@mixin border-radius($radius){
+    -webkit-border-radius:$radius;
+    -moz-border-radius:$radius;
+    -ms-border-radius:$radius;
+    -o-border-radius:$radius;
+    border-radius: $radius;
+}
+
+@mixin centered-flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin zebra(){
+    @for $i from 1 through 7{
+        @if ($i % 2 == 1){
+            .stripe-#{$i}{
+                background-color: $txtcolor;
+                color: $bgcolor;
+            }
+        }
+    }
+}

@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper{
+    width: 800px;
+    margin: 0 auto;
+    background-color: bisque;
+}
+
+#wrapper > header,#wrapper > footer{
+    height: 30px;
+    text-align: center;
+    padding: 7px 0;
+}
+
+#wrapper > header{
+    font-size: 2rem;
+    border-bottom: 2px solid green;
+}
+
+#wrapper > footer{
+    font-size: 1rem;
+    border-top: 2px solid green;
+}
+
+#wrapper > main{
+    margin: 15px 5px;
+    box-sizing: border-box;
+}
+
+
+#wrapper > main > h3{
+    text-align: center;
+}
+
+.register-form{
+    margin: 5px auto;
+    border: 2px solid green;
+    padding: 15px;
+    border-radius: 15px;
+    width: 700px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+.register-form > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.register-form > div + div{
+    margin-top: 30px;
+}
+
+.register-form [type="text"],
+.register-form [type="password"],
+.register-form [type="email"],
+.register-form [type="submit"],
+.register-form [type="reset"],
+#btnCustom
+{
+    padding: 7px 10px;
+    border: 3px solid green;
+    border-radius: 5px;
+}
+
+.register-form [type="text"]:focus,
+.register-form [type="password"]:focus,
+.register-form [type="email"]:focus
+{
+    border: 3px solid yellow;
+    outline: none;
+}
+
+.register-form [type="submit"],
+.register-form [type="reset"],
+#btnCustom{
+    width: 100px;
+    height: 30px;
+    padding: 0;
+}
+
+.register-form [type="submit"]:hover,
+.register-form [type="reset"]:hover
+{
+    color: white;
+    background-color: gray;
+    z-index: 1000;
+    transform: scale(1.1);
+    overflow: hiddens;
+}
+.register-form > div > ul{
+    list-style-type: none;
+}
+
+.register-form > div li> .label-text-field{
+    display: inline-block;
+    width: 70px;
+    text-align: right;
+    margin-right: 7px;
+}
+
+.register-form > ul li + li{
+    margin-top: 15px;
+}
+
+.radio-test [type="radio"]{
+    display: none;
+}
+
+.radio-test [type="radio"] + span{
+    color: yellow;
+    transition: all .4s linear;
+}
+
+.radio-test [type="radio"]:checked  + span{
+    color: green;
+}
+
+.radio-test [type="radio"] + span::after{
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid yellow;
+    margin-top: 5px;
+    margin-left: 3px;
+    box-sizing: border-box;
+    transition: all .4s linear;
+}
+
+.radio-test [type="radio"]:checked  + span::after{
+    background-color: green;
+    border: 2px  solid green;
+}
+
+#userLicense,#userLicense2{
+    display: none;
+}
+
+#userLicense + span,#userLicense2 + span{
+    position: relative;
+}
+
+
+
+#userLicense + span::before,#userLicense2 + span::before{
+    content: '\2610';
+    color: red;
+    display: inline-block;
+    margin-right: 10px;
+    padding-top: 5px;
+    font-size: 1.3rem;
+    position: relative;
+    top: 4px;
+}
+
+#userLicense:checked + span::before,#userLicense2:checked + span::before{
+    content: '\2611';
+}
+
+@media screen and (max-width: 720px){
+    #wrapper{
+        width: 700px;
+    }
+
+    .register-form{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 540px){
+    #wrapper{
+        width: 520px;
+    }
+
+    .register-form{
+        width: 420px;
+    }
+    .register-form > div{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .register-form > div + div{
+        margin-left: 30px;
+    }
+}
+
+/* .container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 350px;
+    height: 100vh;
+} */

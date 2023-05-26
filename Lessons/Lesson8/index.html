@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 8 - Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            Lorem ipsum dolor sit amet
+        </header>
+        <main>
+            <h3>
+                Test Forms - Register User
+            </h3>
+            <form method="post" class="register-form">
+                <div>
+                                    <ul>
+                                        <li>
+                                            <label class="label-text-field" for="userLogin">Login</label>
+                                            <input type="text" name="userLogin" id="userLogin" 
+                                                placeholder="Enter your unique login">
+                                        </li>
+                                        <li>
+                                            <label class="label-text-field" for="userPassword">Password</label>
+                                            <input type="password" name="userPassword" id="userPassword" 
+                                                placeholder="Enter your password">
+                                        </li>
+                                        <li>
+                                            <label class="label-text-field" for="userEmail">Email</label>
+                                            <input type="email" name="userEmail" id="userEmail" 
+                                                placeholder="Enter your email">
+                                        </li>
+                                        <li class="radio-test">
+                                            <legend>Gender</legend>
+                                            <label>
+                                                <input type="radio" name="pol" id="gender1" value="gender" checked>
+                                                <span>gender1</span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="pol" id="gender2" value="gender2">
+                                                <span>gender2</span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="pol" id="gender3" value="gender3">
+                                                <span>gender3</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="userLicense">
+                                                <input type="checkbox" 
+                                                name="userLicense" 
+                                                id="userLicense">
+                                                <span>I agree with user's license</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <label class="label-text-field" for="userLogin">Login</label>
+                            <input type="text" name="userLogin" id="userLogin" 
+                                placeholder="Enter your unique login">
+                        </li>
+                        <li>
+                            <label class="label-text-field" for="userPassword">Password</label>
+                            <input type="password" name="userPassword" id="userPassword" 
+                                placeholder="Enter your password">
+                        </li>
+                        <li>
+                            <label class="label-text-field" for="userEmail">Email</label>
+                            <input type="email" name="userEmail" id="userEmail" 
+                                placeholder="Enter your email">
+                        </li>
+                        <li class="radio-test">
+                            <legend>Gender</legend>
+                            <label>
+                                <input type="radio" name="pol" id="gender1" value="gender" checked>
+                                <span>gender1</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="pol" id="gender2" value="gender2">
+                                <span>gender2</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="pol" id="gender3" value="gender3">
+                                <span>gender3</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="userLicense2">
+                                <input type="checkbox" 
+                                name="userLicense2" 
+                                id="userLicense2">
+                                <span>I agree with user's license</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <input type="submit" value="Register">
+                <input type="reset" value="Clear">
+                <button id="btnCustom">
+                    Custom
+                </button>
+            </form>
+        </main>
+        <footer>
+            Lorem ipsum dolor sit
+        </footer>
+    </div>
+</body>
+</html>

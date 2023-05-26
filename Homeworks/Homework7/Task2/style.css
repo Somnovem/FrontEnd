@@ -1,0 +1,91 @@
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+  }
+
+  .chat-container {
+    max-width: 70vw;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .message {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  .message-content{
+    display: flex;
+  }
+
+  .message-bubble{
+    padding: 10px;
+    width: calc(100% - 20px);
+    
+  }
+
+  .sender .message-bubble {
+    background-color: #add9e6;
+    text-align: right;
+    border-radius: 15px 15px 0 15px;
+    margin-left: 170px;
+  }
+
+  .receiver .message-bubble {
+    background-color: #ffb6c1;
+    border-radius: 15px 15px 15px 0;
+    margin-right: 170px;
+  }
+
+  .message-text {
+    font-size: 1.15rem;
+  }
+
+  .sender .message-text{
+    margin-right: 15px;
+  }
+
+  .receiver .message-text{
+    margin-left: 15px;
+  }
+
+  .sender .message-bubble,
+  .sender .message-user-info{
+    order: 0;
+  }
+
+  .sender .message-user,
+  .sender .message-user-icon{
+    order: 1;
+  }
+
+  .message-time {
+    font-size: 12px;
+    color: #777;
+    white-space: nowrap;
+  }
+
+  .message .message-user{
+    height: 60px;
+    align-items: center;
+    padding: 5px;
+    display: flex;
+    width: 160px;
+  }
+
+  .message-username{
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
+  .message-user-info{
+    display: flex;
+    flex-direction: column;
+  }

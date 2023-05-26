@@ -1,0 +1,96 @@
+@import "_mix.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    @include zebra();
+}
+
+[class|="stripe"]{
+    text-align:center;
+}
+
+.rounded-text{
+    width: three-hundred-px();
+    padding: 10px;
+    border: 2px solid $brdcolor;
+    margin: 15px auto;
+    @include border-radius(15px);
+    &:hover{
+        border: 2px solid yellow;
+    }
+}
+
+.rounded-items{
+    width: 100%;
+    height: 50px;
+    @include centered-flex-container();
+    > div{
+        padding: 5px;
+        background-color: $bghovercolor;
+    }
+}
+
+#wrapper{
+    width: 800px;
+    margin: 0 auto;
+    background-color: $bgcolor;
+    color: $txtcolor;
+    > header {
+        text-align: center;
+        border-bottom: 2px solid $brdcolor;
+    }
+
+    > main{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        display: flex;
+
+    }
+
+    > footer{
+        text-align: right;
+        height: 30px;
+        padding-top: 10px;
+        border-top: 2px solid $brdcolor;
+        @include browser-gradient(90deg,#d3d3d3 ,#a09f9f)
+    }
+}
+
+.content-left{
+    width: 200px;
+    padding: 10px;
+    > ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        >li{
+            >a{
+                display: inline-block;
+                width: 100%;
+                line-height: 25px;
+                text-decoration: none;
+                text-align: center;
+                box-sizing: border-box;
+                transition: all .3s;
+                &:hover{
+                    background-color: $bghovercolor;
+                    color: $txthovercolor;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:720px) {
+    #wrapper{
+        width: 700px;
+
+        >main{
+            .content-right{
+                display: none;
+            }
+        }
+    }
+}
