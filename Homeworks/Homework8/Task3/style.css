@@ -1,0 +1,184 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+#wrapper{
+    width: 900px;
+    margin: 10px auto;
+    background-color: antiquewhite;
+    box-shadow: 0 0 11px 8px rgba(0,0,0,0.35);
+    -webkit-box-shadow: 0 0 11px 8px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0 0 11px 8px rgba(0,0,0,0.35);
+}
+
+#wrapper > main{
+    margin: 20px 5px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.register-form > .forms-holder{
+    display: flex;
+    justify-content: space-around;
+}
+
+.register-form ul{
+    list-style-type: none;
+    padding: 20px;
+}
+
+.register-form ul>span{
+    margin-left: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.register-form > div > ul li{
+    margin-top: 15px;
+}
+
+.register-form > div > ul > li > label  input {
+    width: 100%;
+    border: 0;
+    outline: none;
+    border-bottom: 1px solid #000;
+}
+
+.register-form > div > ul > li > label  input::placeholder{
+    text-indent: 20px;
+    font-size: 1rem;
+}
+
+.register-form li > .label-text-field{
+    display: flex;
+    height: 50px;
+}
+
+.register-form > div > ul > li > label > img{
+    margin: 5px;
+    transform: scale(0.8);
+}
+
+.double-input{
+    width: 100%;
+    display: flex;
+    margin: 15px 0;
+    gap: 15px;
+}
+
+.double-input > input{
+    padding: 20px 10px;
+}
+
+.userBio{
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+.register-form [type="submit"]{
+    height: 40px;
+    width: 150px;
+    background-color: #008a8c;
+    color: white;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 6px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 0 0 6px 6px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0 0 6px 6px rgba(0,0,0,0.15);
+}
+
+.register-form [type="checkbox"]{
+    width: auto;
+    margin-left: 10px;
+}
+
+.register-form > hr + div{
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.register-form > .forms-holder > ul > li:has(select) {
+    display: flex;
+}
+
+
+.sel select { appearance: none; }
+.sel::after {
+     content: "\25b6";
+     position: absolute;
+     top: 50%; right: 10px;
+     transform: translateY(-50%) rotate(90deg);
+     transition: all 0.3s;
+}
+ 
+.sel {
+    width: 49%; 
+    margin-right: 15px;
+    height: 50px;
+    position: relative;
+}
+ 
+.sel select {
+  width: 100%;
+  padding: 10px;
+  color: #333;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-bottom: 1px solid black;
+  height: 100%;
+  text-indent: 15px;
+  font-size: 1.05rem;
+}
+
+.sel::after {
+  font-size: 12px;
+}
+
+.register-form [type="date"] {
+    padding: 20px;
+    font-size: 15px;
+}
+
+
+.label-text-field:has([type="date"]){
+    width: 49%;
+}
+
+@media screen and (max-width: 900px) {
+
+    #wrapper{
+        width: 820px;
+    }
+
+    .register-form{
+        width: 800px;
+    }
+
+    .register-form > div{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #wrapper{
+        width: 520px;
+    }
+
+    .register-form{
+        width: 500px;
+    }
+
+    .double-input{
+        flex-direction: column;
+    }
+    .register-form li:has(.double-input)+li{
+        margin-top: 100px;
+    }
+}

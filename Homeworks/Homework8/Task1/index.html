@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Credit Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <main>
+            <form method="post" class="credit-card-form">
+                <div class="credit-card-header">
+                    <p>Credit card details</p>
+                </div>
+                <div class="credit-card-input">
+                    <div class="credit-card-input-forms">
+                        <ul>
+                            <li>
+                                <label class="label-text-field" for="cardNumber">Card Number</label>
+                                <input  type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" name="cardNumber" id="cardNumber" 
+                                    placeholder="1234 5678 9012 3456">
+                            </li>
+                            <li>
+                                <label class="label-text-field" for="cardName">Name On Card</label>
+                                <input type="text" name="cardName" id="cardName" 
+                                    placeholder="Name Surname">
+                            </li>
+                            <ul>
+                                <li>
+                                    <label class="label-text-field" for="cardExpireDayMonth">Expire Date</label>
+                                    <input  type="text" name="cardExpireDayMonth" id="cardExpireDayMonth" 
+                                        placeholder="02">
+                                </li>
+                                <li>
+                                    <label class="label-text-field" for="cardExpireYear">&nbsp;</label>
+                                    <input type="text" name="cardExpireYear" id="cardExpireYear" 
+                                        placeholder="2017">
+                                </li>
+                                <li>
+                                    <label class="label-text-field" for="cardCVV">CVV / CNN</label>
+                                    <input  type="password" name="cardCVV" id="cardCVV" 
+                                        placeholder="***">
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="credit-card-input-image">
+                        <img src="images/moon_flag.png" alt="">
+                    </div>
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

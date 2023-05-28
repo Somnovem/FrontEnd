@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini bootstrap</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="inputs.css">
+</head>
+<body>
+    <div id="wrapper">
+        <main>
+            <div class="input-block">
+                <div class="input-block-header">
+                    Inputs
+                </div>
+                <div class="input-block-content">
+                    <input type="text" class="input-basic" placeholder="Enter some text">
+                    <div class="input-valid">
+                        <input type="text" placeholder="valid text"/>
+                        <img class="input-image" src="images/valid.png" alt="Image" />
+                    </div>
+                    <div class="input-invalid">
+                        <input type="text" placeholder="invalid text"/>
+                        <img class="input-image" src="images/invalid.png" alt="Image" />
+                    </div>
+                </div>
+            </div>
+            <div class="input-block">
+                <div class="input-block-header">
+                    Check boxes
+                </div>
+                <div class="input-block-content">
+                    <div class="checkbox-slider-container">
+                        <label class="checkbox-slider">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                        <span>Subscribe</span>
+                    </div>
+                    <div class="checkbox-slider-container">
+                        <label class="checkbox-slider">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                        <span>Subscribe</span>
+                      </div>
+                </div>
+            </div>
+            <div class="input-block">
+                <div class="input-block-header">
+                    Radio buttons
+                </div>
+                <div class="input-block-content">
+                    <span>Gender:</span>
+                    <label class="radioButton-round">
+                        <input type="radio" name="genderRadiobutton" id="genderMale" value="male" checked>
+                        <div class="outer-circle">
+                            <div class="inner-circle">
+
+                            </div>
+                        </div>
+                        <span>
+                            Male
+                        </span>
+                    </label>
+                    <label class="radioButton-round">
+                        <input type="radio" name="genderRadiobutton" id="genderFemale" value="female">
+                        <div class="outer-circle">
+                            <div class="inner-circle">
+
+                            </div>
+                        </div>
+                        <span>
+                            Female
+                        </span>
+                    </label>
+                </div>
+            </div>
+            <div class="input-block">
+                <div class="input-block-header">
+                    Buttons
+                </div>
+                <div class="input-block-content">
+                    <button class="fancy-button button-safe">
+                        Active
+                    </button>
+                    <button class="fancy-button button-safe-hovered">
+                        Hover
+                    </button>
+                    <button class="fancy-button button-danger">
+                        Danger
+                    </button>
+                    <button class="fancy-button button-danger-hovered">
+                        Hover
+                    </button>
+                    <button class="fancy-button button-disabled">
+                        Disabled
+                    </button>
+                    <button class="fancy-button button-safe-round">
+                        +
+                    </button>
+                    <button class="fancy-button button-danger-round">
+                        -
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

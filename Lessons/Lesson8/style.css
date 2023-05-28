@@ -1,27 +1,27 @@
 *{
-    margin: 0;
+    margin:0;
     padding: 0;
 }
 
 #wrapper{
     width: 800px;
     margin: 0 auto;
-    background-color: bisque;
+    background-color: antiquewhite;
 }
 
-#wrapper > header,#wrapper > footer{
+#wrapper > header, #wrapper > footer{
     height: 30px;
+    font-size: 2rem;
     text-align: center;
     padding: 7px 0;
 }
 
 #wrapper > header{
-    font-size: 2rem;
     border-bottom: 2px solid green;
 }
 
 #wrapper > footer{
-    font-size: 1rem;
+    font-size: 0.7rem;
     border-top: 2px solid green;
 }
 
@@ -30,17 +30,17 @@
     box-sizing: border-box;
 }
 
-
 #wrapper > main > h3{
     text-align: center;
 }
 
+
 .register-form{
-    margin: 5px auto;
     border: 2px solid green;
     padding: 15px;
     border-radius: 15px;
     width: 700px;
+    margin: 5px auto;
     background-color: lightgray;
     text-align: center;
 }
@@ -50,8 +50,19 @@
     justify-content: space-between;
 }
 
-.register-form > div + div{
-    margin-top: 30px;
+.register-form > div > ul{
+    list-style-type: none;
+}
+
+.register-form > div > ul li + li{
+    margin-top: 15px;
+}
+
+.register-form li > .label-text-field{
+    display: inline-block;
+    width: 70px;
+    text-align: right;
+    margin-right: 7px;
 }
 
 .register-form [type="text"],
@@ -59,17 +70,18 @@
 .register-form [type="email"],
 .register-form [type="submit"],
 .register-form [type="reset"],
-#btnCustom
-{
+.register-form [type="tel"],
+#btnCustom{
     padding: 7px 10px;
     border: 3px solid green;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
 .register-form [type="text"]:focus,
 .register-form [type="password"]:focus,
-.register-form [type="email"]:focus
-{
+.register-form [type="email"]:focus,
+.register-form [type="tel"]:focus{
     border: 3px solid yellow;
     outline: none;
 }
@@ -78,45 +90,20 @@
 .register-form [type="reset"],
 #btnCustom{
     width: 100px;
-    height: 30px;
-    padding: 0;
+    height: 40px;
+    transition: all .5s;
 }
 
 .register-form [type="submit"]:hover,
-.register-form [type="reset"]:hover
-{
-    color: white;
+.register-form [type="reset"]:hover,
+#btnCustom:hover{
     background-color: gray;
-    z-index: 1000;
-    transform: scale(1.1);
-    overflow: hiddens;
-}
-.register-form > div > ul{
-    list-style-type: none;
-}
-
-.register-form > div li> .label-text-field{
-    display: inline-block;
-    width: 70px;
-    text-align: right;
-    margin-right: 7px;
-}
-
-.register-form > ul li + li{
-    margin-top: 15px;
+    color: white;
+    font-weight: bold;
 }
 
 .radio-test [type="radio"]{
     display: none;
-}
-
-.radio-test [type="radio"] + span{
-    color: yellow;
-    transition: all .4s linear;
-}
-
-.radio-test [type="radio"]:checked  + span{
-    color: green;
 }
 
 .radio-test [type="radio"] + span::after{
@@ -129,40 +116,52 @@
     margin-top: 5px;
     margin-left: 3px;
     box-sizing: border-box;
-    transition: all .4s linear;
+    transition: all .4s;
 }
 
-.radio-test [type="radio"]:checked  + span::after{
+.radio-test [type="radio"]:checked + span{
+    color: green;
+}
+
+.radio-test [type="radio"]:checked + span::after{
     background-color: green;
-    border: 2px  solid green;
+    border: 2px solid green;
 }
 
-#userLicense,#userLicense2{
+#userLicense1, #userLicense2{
     display: none;
 }
 
-#userLicense + span,#userLicense2 + span{
+#userLicense1 + span,
+#userLicense2 + span{
     position: relative;
+    transition: all .8s;
 }
 
+#userLicense1 + span:hover,
+#userLicense2 + span:hover{
+    color: white;
+    text-shadow: 0px 0px 7px rgba(0,0,0,0.7);
+}
 
-
-#userLicense + span::before,#userLicense2 + span::before{
-    content: '\2610';
+#userLicense1 + span::before,
+#userLicense2 + span::before{
+    content: "\2610";
     color: red;
     display: inline-block;
     margin-right: 10px;
-    padding-top: 5px;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     position: relative;
     top: 4px;
 }
 
-#userLicense:checked + span::before,#userLicense2:checked + span::before{
-    content: '\2611';
+#userLicense1:checked + span::before,
+#userLicense2:checked + span::before{
+    content: "\2611";
+    color: green;
 }
 
-@media screen and (max-width: 720px){
+@media screen and (max-width: 720px) {
     #wrapper{
         width: 700px;
     }
@@ -172,9 +171,9 @@
     }
 }
 
-@media screen and (max-width: 540px){
+@media screen and (max-width: 520px) {
     #wrapper{
-        width: 520px;
+        width: 500px;
     }
 
     .register-form{
@@ -184,15 +183,8 @@
         flex-direction: column;
         justify-content: space-around;
     }
-    .register-form > div + div{
-        margin-left: 30px;
+
+    .register-form > div > ul + ul{
+        margin-top: 20px;
     }
 }
-
-/* .container{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 350px;
-    height: 100vh;
-} */

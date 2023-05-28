@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <main>
+            <form class="register-form">
+                <div class="forms-holder">
+                    <ul>
+                        <span>Registration form</span>
+                        <li>
+                            <label class="label-text-field" for="userLogin">
+                                <img src="images/username.png" alt="">
+                                <input type="text" name="userLogin" id="userLogin" placeholder="Username">
+                            </label>
+                        </li>
+                        <li>
+                            <label class="label-text-field" for="userEmail">
+                                <img src="images/email.png" alt="">
+                                <input type="text" name="userPassword" id="userPassword" placeholder="Email address">
+                            </label>
+                        </li>
+                        <li>
+                            <label class="label-text-field" for="userPassword">
+                                <img src="images/pswd.png" alt="">
+                                <div class="double-input">
+                                    <input type="text" name="userPassword" id="userPassword" placeholder="Password">
+                                    <input type="text" name="userConfirmPassword" id="userConfirmPassword" placeholder="Confirm password">
+                                </div>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="userNewsCheckbox">
+                                <input type="checkbox" name="userNewsCheckbox" id="userNewsCheckbox">
+                                <span>I want to agree to receive news and special offers</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="userTermsCheckbox">
+                                <input type="checkbox" name="userTermsCheckbox" id="userTermsCheckbox">
+                                <span>I agree with Terms and Conditions</span>
+                            </label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <span>Personal details</span>
+                        <li>
+                            <label class="label-text-field" for="userFirstname">
+                                <div class="double-input">
+                                    <input type="text" name="userFirstname" id="userFirstname" placeholder="First name">
+                                    <input type="text" name="userLastname" id="userLastname" placeholder="Last name">
+                                </div> 
+                            </label>
+                        </li>
+                        <li>
+                            <div class="sel">
+                                <select name="userGender" id="userGender">
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+                            <label class="label-text-field">
+                                <input type="date" name="userBirthday" id="userBirthday">
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <hr>
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lesson 8 - Forms</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,93 +14,120 @@
         </header>
         <main>
             <h3>
-                Test Forms - Register User
+                Test forms - Register User
             </h3>
-            <form method="post" class="register-form">
-                <div>
-                                    <ul>
-                                        <li>
-                                            <label class="label-text-field" for="userLogin">Login</label>
-                                            <input type="text" name="userLogin" id="userLogin" 
-                                                placeholder="Enter your unique login">
-                                        </li>
-                                        <li>
-                                            <label class="label-text-field" for="userPassword">Password</label>
-                                            <input type="password" name="userPassword" id="userPassword" 
-                                                placeholder="Enter your password">
-                                        </li>
-                                        <li>
-                                            <label class="label-text-field" for="userEmail">Email</label>
-                                            <input type="email" name="userEmail" id="userEmail" 
-                                                placeholder="Enter your email">
-                                        </li>
-                                        <li class="radio-test">
-                                            <legend>Gender</legend>
-                                            <label>
-                                                <input type="radio" name="pol" id="gender1" value="gender" checked>
-                                                <span>gender1</span>
-                                            </label>
-                                            <label>
-                                                <input type="radio" name="pol" id="gender2" value="gender2">
-                                                <span>gender2</span>
-                                            </label>
-                                            <label>
-                                                <input type="radio" name="pol" id="gender3" value="gender3">
-                                                <span>gender3</span>
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <label for="userLicense">
-                                                <input type="checkbox" 
-                                                name="userLicense" 
-                                                id="userLicense">
-                                                <span>I agree with user's license</span>
-                                            </label>
-                                        </li>
-                                    </ul>
-                </div>
+
+            <form class="register-form">
                 <div>
                     <ul>
                         <li>
                             <label class="label-text-field" for="userLogin">Login</label>
-                            <input type="text" name="userLogin" id="userLogin" 
-                                placeholder="Enter your unique login">
+                            <input type="text" 
+                                name="userLogin" 
+                                id="userLogin"
+                                placeholder="your login">
                         </li>
                         <li>
                             <label class="label-text-field" for="userPassword">Password</label>
-                            <input type="password" name="userPassword" id="userPassword" 
-                                placeholder="Enter your password">
+                            <input type="password" 
+                                name="userPassword" 
+                                id="userPassword"
+                                placeholder="your password">
                         </li>
                         <li>
                             <label class="label-text-field" for="userEmail">Email</label>
-                            <input type="email" name="userEmail" id="userEmail" 
-                                placeholder="Enter your email">
+                            <input type="email" name="userEmail" id="userEmail"
+                            placeholder="your e-mail">
                         </li>
                         <li class="radio-test">
-                            <legend>Gender</legend>
                             <label>
-                                <input type="radio" name="pol" id="gender1" value="gender" checked>
+                                <input type="radio" name="pol" 
+                                    id="gender1" 
+                                    value="gender1">
                                 <span>gender1</span>
                             </label>
+                            
                             <label>
-                                <input type="radio" name="pol" id="gender2" value="gender2">
+                                <input type="radio" name="pol" 
+                                    id="gender2" 
+                                    value="gender2">
                                 <span>gender2</span>
                             </label>
+                            
                             <label>
-                                <input type="radio" name="pol" id="gender3" value="gender3">
+                                <input type="radio" name="pol" 
+                                    id="gender3" 
+                                    value="gender3">
                                 <span>gender3</span>
                             </label>
                         </li>
+    
+                        <li>
+                            <label for="userLicense1">
+                                <input type="checkbox" 
+                                name="userLicense1" 
+                                id="userLicense1">
+                                <span>Lorem ipsum dolor sit...</span>
+                            </label>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <label class="label-text-field" for="userFirstname">Firstname</label>
+                            <input type="text" 
+                                name="userFirstname" 
+                                id="userFirstname"
+                                placeholder="Firstname">
+                        </li>
+                        <li>
+                            <label class="label-text-field" for="userLastname">Lastname</label>
+                            <input type="text" 
+                                name="userLastname" 
+                                id="userLastname"
+                                placeholder="Lastname">
+                        </li>
+                        <li>
+                            <label class="label-text-field" for="userTel">Tel</label>
+                            <input type="tel" 
+                                name="userTel" 
+                                id="userTel"
+                                placeholder="+380123456789">
+                        </li>
+                        <li class="radio-test">
+                            <label>
+                                <input type="radio" name="types" 
+                                    id="option1" 
+                                    value="option1">
+                                <span>option 1</span>
+                            </label>
+                            
+                            <label>
+                                <input type="radio" name="types" 
+                                    id="option2" 
+                                    value="option2">
+                                <span>option 2</span>
+                            </label>
+                            
+                            <label>
+                                <input type="radio" name="types" 
+                                    id="option3" 
+                                    value="option3">
+                                <span>option 3</span>
+                            </label>
+                        </li>
+    
                         <li>
                             <label for="userLicense2">
                                 <input type="checkbox" 
                                 name="userLicense2" 
                                 id="userLicense2">
-                                <span>I agree with user's license</span>
+                                <span>Lorem ipsum dolor sit...</span>
                             </label>
                         </li>
                     </ul>
                 </div>
+
                 <br>
                 <input type="submit" value="Register">
                 <input type="reset" value="Clear">
@@ -106,10 +135,9 @@
                     Custom
                 </button>
             </form>
+
         </main>
-        <footer>
-            Lorem ipsum dolor sit
-        </footer>
+        <footer>Lorem ipsum dolor sit</footer>
     </div>
 </body>
 </html>

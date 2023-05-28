@@ -1,0 +1,64 @@
+<style>
+    .checkbox-slider {
+      position: relative;
+      display: inline-block;
+      width: 45px;
+      height: 25px;
+    }
+  
+    .checkbox-slider input[type="checkbox"] {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+  
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border: 1px solid green;
+      transition: 0.4s;
+      border-radius: 5px;
+    }
+  
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 20px;
+      width: 24px;
+      left: 2px;
+      bottom: 1px;
+      background-color: coral;
+      transition: 0.4s;
+      border-radius: 5px;
+      transform: translateX(16px);
+    }
+  
+    input[type="checkbox"]:checked + .slider:before{
+      background-color: lime;
+    }
+  
+    input[type="checkbox"]:checked + .slider:before {
+      transform: translateX(0);
+    }
+
+    .checkbox-slider-container{
+        display: flex;
+        align-items: center;
+    }
+    .checkbox-slider-container > span{
+        margin-left: 10px;
+    }
+  </style>
+  
+  <div class="checkbox-slider-container">
+    <label class="checkbox-slider">
+        <input type="checkbox">
+        <span class="slider"></span>
+    </label>
+    <span>Subscribe</span>
+  </div>
+  
