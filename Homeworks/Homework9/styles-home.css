@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#wrapper > p {
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.user-stats{
+    width: 100%;
+    display: flex;
+}
+
+.user-stats > *{
+    margin: 20px;
+}
+
+.user-stats > div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-stats > div > p{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.news-block{
+    display: flex;
+    border: 2px solid lightgray;
+    margin: 3px;
+}
+
+.news-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.news-info-header{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-info-header > .news-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.news-info-header > .news-date{
+    padding-right: 10px;
+    font-size: 1.7rem;
+}
+
+.news-info-content{
+    margin-left: 20px;
+}
+
+.btn-News-more,
+.btn-Rewards-more{
+    border: 0;
+    border-radius: 5px;
+    margin: 0 3px;
+    padding: 5px 0;
+}
+
+.btn-News-more{
+    background-color: #6c757c;
+    color: white;
+}
+
+.btn-News-more:hover{
+    background-color: #4e555a;
+}
+
+.btn-Rewards-more{
+    margin-top: 3px;
+    background-color: #f8f9fb;
+    color: black;
+}
+
+.btn-Rewards-more:hover{
+    background-color: #caccce;
+}
+
+.rewards-block{
+    display: flex;
+    width: 100%;
+}
+
+.rewards-block > div{
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.rewards-block:nth-child(odd),
+.rewards-block:nth-child(odd) .rewards-info-reward,
+.rewards-block:nth-child(odd) > .rewards-info-left  > span,
+.rewards-block:nth-child(odd) > .rewards-info-right > span{
+    transform: scaleX(-1);
+}
+
+.rewards-wrapper > div + div{
+    margin-top: 10px;
+}
+
+.rewards-info-reward > span{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.rewards-info-left,
+.rewards-info-right{
+    border: 2px solid lightgray;
+    width: 160px;
+}
+
+.rewards-info-left{
+    border-radius: 3px 100% 100% 3px;
+}
+
+.rewards-info-right{
+    border-radius: 100% 3px 3px 100%;
+}
