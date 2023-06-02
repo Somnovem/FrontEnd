@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#wrapper > p{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.settings-container{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 30px;
+}
+
+.block{
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+    width: 40%;
+}
+
+.block:first-child{
+    width: 20%;
+    padding-top: 20px;
+}
+
+.btn{
+    background-color: #6c757e;
+    color: white;
+    font-size: 1.6rem;
+    width: 100%;
+}
+
+.settings-headers{
+    background-color: #cce6ff;
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.settings-headers > p{
+    color: #52759b;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 10px;
+    width: 40%;
+}
+
+.settings-headers > p:first-child{
+    width: 20%;
+}
+
+.settings-controls{
+    margin-top: 20px;
+    display: flex;
+}
+
+.settings-controls > .block:first-child{
+    display: flex;
+    align-items: center;
+}
+
+.form-control{
+    margin: 20px 0;
+}
+
+.form-control::placeholder{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.img-profile-picture{
+    width: 200px;
+    height: 200px;
+}

@@ -9,88 +9,228 @@
     <link rel="stylesheet" href="styles-menu.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-blackboard"></span></a>
-          </div>
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="homework.html">Homework</a></li>
-            <li><a href="settings.html">Settings</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-                <img src="images/av_64.png" alt="" class="navbar-image">
-            </li>
-          </ul>
-        </div>
-      </nav>
       <div id="wrapper">
+        <nav class="navbar">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-blackboard"></span></a>
+            </div>
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="homework.html">Homework</a></li>
+              <li><a href="settings.html">Settings</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                  <img src="images/av_64.png" alt="" class="navbar-image">
+              </li>
+            </ul>
+          </div>
+        </nav>
         <header>
           <p>Homework</p>
           <div class="status-colors">
-            <div class="row">
-              <div class="col-sm-4">
-                <div class="homework-item homework-current">
-                  <div class="homework-item-header">
-                    Loops
-                  </div>
-                  <div class="homework-item-date">
-                    10/09/2019
-                  </div>
-                  <div class="homework-item-action">
-                    <div class="input-group">
-                      <input id="msg" type="d" class="form-control" name="msg" placeholder="Choose file">
-                      <span class="input-group-addon">Browse</span>
-                    </div>
+            <div class="homework-status-current">current - </div>
+            <div class="homework-status-reviewed">reviewed - </div>
+            <div class="homework-status-review">under review - </div>
+            <div class="homework-status-overdue">overdue - </div>
+          </div>
+        </header>
+        <main>
+          <div class="row">
+            <p>JavaScript</p>
+            <div class="row-hr">
+              <hr>
+            </div>
+            <div class="col-sm-4">
+              <div class="homework-item homework-current">
+                <div class="homework-item-header">
+                  Loops
+                </div>
+                <div class="homework-item-date">
+                  10/09/2019
+                </div>
+                <div class="homework-item-action">
+                  <div class="input-group">
+                    <input id="msg" type="d" class="form-control" name="msg" placeholder="Choose file">
+                    <span class="input-group-addon">Browse</span>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-4">
-                <div class="homework-item homework-review">
-                  <div class="homework-item-header">
-                    Conditional statements
-                  </div>
-                  <div class="homework-item-date">
-                    08/05/2019
-                  </div>
-                  <div class="homework-item-action">
-                    <div class="input-group">
-                      <button class="btn-download-homework">
-                        <span class="glyphicon glyphicon-download-alt"></span> Your file
-                      </button>
-                      <button class="btn-remove-homework">
-                        <span class="glyphicon glyphicon-trash"></span>Remove
-                      </button>
-                    </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="homework-item homework-review">
+                <div class="homework-item-header">
+                  Conditional statements
+                </div>
+                <div class="homework-item-date">
+                  08/05/2019
+                </div>
+                <div class="homework-item-action">
+                  <div class="input-group">
+                    <button class="btn-download-homework">
+                      <span class="glyphicon glyphicon-download-alt"></span> Your file
+                    </button>
+                    <button class="btn-extra-homework">
+                      <span class="glyphicon glyphicon-trash"></span>Remove
+                    </button>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-4">
-                <div class="homework-item homework-review">
-                  <div class="homework-item-header">
-                    Variables
-                  </div>
-                  <div class="homework-item-date">
-                    05/05/2019
-                  </div>
-                  <div class="homework-item-action">
-                    <div class="input-group">
-                      <button class="btn-download-homework">
-                        <span class="glyphicon glyphicon-download-alt"></span> Your file
-                      </button>
-                      <button class="btn-remove-homework">
-                        <span class="glyphicon glyphicon-trash"></span>Remove
-                      </button>
-                    </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="homework-item homework-review">
+                <div class="homework-item-header">
+                  Variables
+                </div>
+                <div class="homework-item-date">
+                  05/05/2019
+                </div>
+                <div class="homework-item-action">
+                  <div class="input-group">
+                    <button class="btn-download-homework">
+                      <span class="glyphicon glyphicon-download-alt"></span> Your file
+                    </button>
+                    <button class="btn-extra-homework">
+                      <span class="glyphicon glyphicon-trash"></span>Remove
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </header>
-        <main>
+          <div class="row">
+            <p>HTML & CSS</p>
+            <div class="row-hr">
+              <hr>
+            </div>
+            <div class="col-sm-4">
+              <div class="homework-item homework-overdue">
+                <div class="homework-item-header">
+                  Adaptive layout
+                </div>
+                <div class="homework-item-date">
+                  29/04/2019
+                </div>
+                <div class="homework-item-action">
+                  <div class="input-group">
+                    <input id="msg" type="d" class="form-control" name="msg" placeholder="Choose file">
+                    <span class="input-group-addon">Browse</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="homework-item homework-overdue">
+                <div class="homework-item-header">
+                  Grid layout
+                </div>
+                <div class="homework-item-date">
+                  27/04/2019
+                </div>
+                <div class="homework-item-action">
+                  <div class="input-group">
+                    <input id="msg" type="d" class="form-control" name="msg" placeholder="Choose file">
+                    <span class="input-group-addon">Browse</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="homework-item homework-reviewed">
+                <div class="homework-item-header">
+                  Flexbox
+                  <div class="homework-item-header-grade">
+                    12
+                  </div>
+                </div>
+                <div class="homework-item-date">
+                  24/04/2019
+                </div>
+                <div class="homework-item-action">
+                  <div class="input-group">
+                    <button class="btn-download-homework">
+                      <span class="glyphicon glyphicon-download-alt"></span> Your file
+                    </button>
+                    <button class="btn-extra-homework">
+                      <span class="glyphicon glyphicon-repeat"></span>Resend
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+                <div class="homework-item homework-reviewed">
+                  <div class="homework-item-header">
+                    Animations
+                    <div class="homework-item-header-grade">
+                      10
+                    </div>
+                  </div>
+                  <div class="homework-item-date">
+                    20/04/2019
+                  </div>
+                  <div class="homework-item-action">
+                    <div class="input-group">
+                      <button class="btn-download-homework">
+                        <span class="glyphicon glyphicon-download-alt"></span> Your file
+                      </button>
+                      <button class="btn-extra-homework">
+                        <span class="glyphicon glyphicon-repeat"></span>Resend
+                      </button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="homework-item homework-reviewed">
+                <div class="homework-item-header">
+                  Forms
+                  <div class="homework-item-header-grade">
+                    10
+                  </div>
+                </div>
+                <div class="homework-item-date">
+                  18/04/2019
+                </div>
+                <div class="homework-item-action">
+                  <div class="input-group">
+                    <button class="btn-download-homework">
+                      <span class="glyphicon glyphicon-download-alt"></span> Your file
+                    </button>
+                    <button class="btn-extra-homework">
+                      <span class="glyphicon glyphicon-repeat"></span>Resend
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="homework-item homework-reviewed">
+                <div class="homework-item-header">
+                  Tables
+                  <div class="homework-item-header-grade">
+                    12
+                  </div>
+                </div>
+                <div class="homework-item-date">
+                  17/04/2019
+                </div>
+                <div class="homework-item-action">
+                  <div class="input-group">
+                    <button class="btn-download-homework">
+                      <span class="glyphicon glyphicon-download-alt"></span> Your file
+                    </button>
+                    <button class="btn-extra-homework">
+                      <span class="glyphicon glyphicon-repeat"></span>Resend
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </main>
       </div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
